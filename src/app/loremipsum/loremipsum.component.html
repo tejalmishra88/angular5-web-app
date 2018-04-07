@@ -1,0 +1,16 @@
+<h2 [class]="cls">
+  Welcome {{ name }} !!!
+</h2>
+<input type="text" [(ngModel)]="name" [placeholder]
+="defaultplaceholder">
+<p>you clicked {{ times }} times</p>
+<p><button (click)="increaseclick()">click me!</button></p>
+<p *ngIf="show; then tb else eb" ></p>
+<ng-template #tb>
+  <h2>Then Block Executed...</h2>
+</ng-template>
+<ng-template #eb>
+  <h2>Else Block Executed...</h2>
+</ng-template>
+<p><button (click)="changeblock()">{{ show ? ' show then block': ' show else block'}}</button></p>
+<p [ngClass] ="[cls, cls2]" >ngClass Directive Implementation</p>
