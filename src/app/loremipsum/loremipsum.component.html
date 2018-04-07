@@ -19,3 +19,11 @@
   <input type="radio" name="d" id="" (change)="changecolor('blue')">blue<br/>
   <input type="number" name="" id="" [(ngModel)] ='size'>
 </p>
+<p><input type="number" name="" id="" [(ngModel)] ="showView"></p>
+<div [ngSwitch]="showView">
+  <p *ngSwitchCase="1">this is block One</p>
+  <p *ngSwitchCase="2">this is block Two</p>
+  <p *ngSwitchCase="3">this is block Three</p>
+  <p *ngSwitchCase="4">this is block four</p>
+  <p *ngSwitchDefault>this is Default block</p>
+</div>

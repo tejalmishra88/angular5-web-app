@@ -27,6 +27,7 @@ inlineColor = {
 defaultplaceholder="default placeholder";
 times = 0;
 show: boolean = true;
+showView: number = 0;
   constructor() { }
 
   ngOnInit() {   }
