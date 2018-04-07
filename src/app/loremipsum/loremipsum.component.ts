@@ -17,7 +17,13 @@ defaultvalue = "";
 colors = {
       ' colorgreen colorblue colorred':true,
 }
-inlineColor = 'red';
+size:number = 45;
+fcolor="";
+inlineColor = {
+ 'font-size':'25px',
+ 'color':'blue',
+ 'font-weight':'bold',
+};
 defaultplaceholder="default placeholder";
 times = 0;
 show: boolean = true;
@@ -27,6 +33,10 @@ show: boolean = true;
   changeblock(){this.show =!this.show;}
   increaseclick()
   {this.times=this.times+1;
+  }
+  changecolor(val){
+    this.fcolor = val;
+
   }
 
 }

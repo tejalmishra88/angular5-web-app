@@ -13,4 +13,9 @@
   <h2>Else Block Executed...</h2>
 </ng-template>
 <p><button (click)="changeblock()">{{ show ? ' show then block': ' show else block'}}</button></p>
-<p [style] =" {'color':'red'}" >ngClass Directive Implementation</p>
+<p [ngStyle] ="{'color':fcolor, 'font-size.px':size}" >ngClass Directive Implementation</p>
+<p><input type="radio" name="d" id="" (change)="changecolor('red')">red<br/>
+  <input type="radio" name="d" id=""  (change)="changecolor('green')">green<br/>
+  <input type="radio" name="d" id="" (change)="changecolor('blue')">blue<br/>
+  <input type="number" name="" id="" [(ngModel)] ='size'>
+</p>
